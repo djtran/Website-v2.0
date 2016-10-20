@@ -1,0 +1,22 @@
+.body{
+    padding: 4%;
+    overflow-y: hidden;
+}
+
+.title{
+    text-align: center;
+}
+
+.rsContent{
+    border-left: 1px solid #2b2d2f;
+}
+
+.profile-photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 20vw;
+    margin-bottom: 20px;
+    width: auto;
+    border-radius: 2em;
+}

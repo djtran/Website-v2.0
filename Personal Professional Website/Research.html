@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>David J. Tran</title>
+	<link rel="stylesheet" type ="text/css" href="normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One|Quicksand:400,700|Indie+Flower' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="firststyles.css">
+
+</head>
+<body>
+<header>
+
+
+<a href="index.html">
+<h1><b>David J. Tran</b> <br>
+</h1>
+</a>
+<h2>
+	<i>Boston University Class of 2017 <br> College of Engineering <br><a id="email" href = "mailto:djtran@bu.edu">djtran@bu.edu</a> <br> <a id="Resume" href = "djt-Resume.docx" alt = "David's Resume" download> Resume </a> </i>
+</h2>
+<nav>
+
+	<ul>
+	<li>
+	<a href = "index.html"> Home</a>
+	</li>
+	<li> <a href = "Projects.html"> Projects</a>
+	</li>
+	<li>
+	<a href = "Research.html" class = "selected">Research</a>
+	</li>
+	<li>
+	<a href = "Education.html">Education</a>
+	</li>
+	<li>
+	<a href = "Work.html">Work</a>
+	</li>
+	<li>
+	<a href = "About.html">About</a>
+	</li>
+	</ul>
+
+</nav>
+</header>
+<div id="wrapper">
+<section>
+	My work involves connecting a light/stream source, a server, and a receiver together through the local area network in order to do real-time tracking and processing of relative location. Imagine a future where we can receive our internet connections from our lights. I'm working on having that light beam track you and stay with you wherever you decide to go.
+	<div class="GalleryNav">
+		<div class="title"> Smart Lighting Center Videos
+
+			<ul class="content hidden">
+				<li>
+				<div class ="video-container">
+				<iframe src="https://www.youtube.com/embed/MTuotdUbDCI" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<br>
+				<p>Motion Detecting via Raspberry Pi's PiCamera - tracks object positions and delivers data over LAN to the Arduino. Self-corrects faults in image based on initially set limits.
+				</p>
+				</li>
+				<li>
+				<div class = "video-container">
+				<iframe src="https://www.youtube.com/embed/hepJhAco9w4" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<br>
+				<p>
+				Beam Steering over LAN - Raspberry Pi gives directions to an Arduino which uses TTL communication to deliver the directions to the Arduino that controls the MEMS mirror. Two arduinos were necessary because the Ethernet add-on on the first Arduino took some of the necessary PWM pins to control the mirror.
+				</p>
+				</li>
+
+				<li>
+				<div class = "video-container">
+				<iframe src = "https://www.youtube.com/embed/IitUyDkaj1E" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<br>
+				<p>
+				Completed real-time tracking prototype - The Raspberry Pi begins by calibrating its controls, giving directions to the Arduino to move the MEMS mirror and identifying where the beam goes. Then, I introduce the object into the scene, here it is a small screw. The Raspberry Pi attempts to match the location of the beam with the location of the screw. The biggest limiting factor here is in the speed of the Raspberry Pi and its camera. The low speed of the camera limits how fast the tracking can occur.
+				</p>
+				</li>
+
+
+			</ul>
+
+		</div>
+	</div>
+
+</section>
+
+</div>
+
+<div id = "footer">
+	&copy; 2015 David J. Tran 
+</div>
+
+<script src="jquery-1.12.0.js"></script>
+<script src = "JS-JQ/Load.js"></script>
+<script src = "JS-JQ/Gallery.js"></script>
+
+</body>
+</html>
