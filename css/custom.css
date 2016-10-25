@@ -3,6 +3,41 @@
     overflow-y: hidden;
 }
 
+.fit-card{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.translucent{
+    opacity: .5;
+}
+
+.white-text{
+    color: #f1f1f1;
+}
+
+.jumbotron {
+    background-image: url("../graphics/VRHackTalk.jpg");
+    background-size: cover;
+}
+
+.space10{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.space150{
+    padding-top:150px;
+    padding-bot:150px;
+}
+
+.center{
+    display: block;
+    width: auto;
+    height: auto;
+}
+
 .title{
     text-align: center;
 }
@@ -12,11 +47,6 @@
 }
 
 .profile-photo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 20vw;
-    margin-bottom: 20px;
-    width: auto;
-    border-radius: 2em;
+    padding: 5%;
 }
+

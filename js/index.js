@@ -40,3 +40,7 @@ $(".educLink").click(function () {
         $(".body-content").load("content/educ.html", $(".body-content").fadeIn());
     });
 });
+
+$(document).ready(function () {
+    $(".body-content").load("content/home.html");
+});
