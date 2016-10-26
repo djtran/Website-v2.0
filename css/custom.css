@@ -1,8 +1,23 @@
 .body{
     margin-top: 40px;
     margin-bottom: 30px;
-    padding: 4% 0%;
+    padding: 4% 2%;
     overflow-y: hidden;
+    overflow-x: hidden;
+}
+.body-content{
+    min-height: 667px;
+}
+
+
+a:hover, a:focus{
+    text-decoration: none;
+}
+.white-link{
+    color:#f0f0f0;
+}
+.white-link:hover, .white-link:focus{
+    color: #b1e9be;
 }
 
 .fit-card{
