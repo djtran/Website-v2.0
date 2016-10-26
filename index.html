@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="graphics/favicon.ico">
 
     <title>Hobbies++</title>
     <!-- Bootstrap core CSS -->
@@ -28,7 +28,7 @@
 <nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
     <div class="container">
         <a class="navbar-brand homeLink" href="#">David J. Tran</a>
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav hidden-sm-down">
             <li class="nav-item">
                 <a class="nav-link homeLink" href="#"> Home <span class="sr-only">(current)</span></a>
             </li>
@@ -42,23 +42,39 @@
                 <a class="nav-link educLink" href="#">Education</a>
             </li>
         </ul>
+
+        <div>
+            <a class="btn btn-secondary hidden-md-up pull-xs-right" href="#navDropdown" data-toggle="collapse"
+               aria-expanded="false"> + </a>
+        </div>
+
+
     </div>
 </nav>
 
 <div class="container body">
+    <div id="navDropdown" class="collapse hidden-md-up">
+        <div class="list-group">
+
+            <a class="list-group-item homeLink" href="#"> Home </a>
+            <a class="list-group-item workLink" href="#"> Work </a>
+            <a class="list-group-item projLink" href="#"> Projects </a>
+            <a class="list-group-item educLink" href="#"> Education </a>
+        </div>
+    </div>
     <div class="row">
-        <div class="col-xs-10">
+        <div class="col-md-10">
             <div class="jumbotron">
                 <div class="row">
-                    <div class="col-xs-12">
+                    <div class="col-sm-12">
                         <h1 class="announcer white-text space150"> Aspiring Computer Engineer.</h1>
                     </div>
 
                 </div>
             </div>
         </div>
-        <div class="col-xs-2 rsContent">
-            Quick Contact Info
+        <div class="col-sm-2 rsContent hidden-sm-down">
+            Contact Info
             <a href="mailto:djtran@bu.edu">djtran@bu.edu</a>
             <br>
             <a href="https://www.linkedin.com/in/david-tran-52682075">LinkedIn</a>
@@ -69,8 +85,27 @@
             <br>
             <a href="https://devpost.com/djtran">Devpost</a>
         </div>
-    </div>
 
+        <br>
+
+        <div class="col-sm-12 hidden-md-up text-xs-center">
+            <a class="card card-header bg-info" data-toggle="collapse" href="#contactInfo" aria-expanded="false">
+                Contact Info </a>
+            <div id="contactInfo" class="collapse">
+                <div class="list-group input-block-level">
+
+                    <a class="list-group-item" href="mailto:djtran@bu.edu">djtran@bu.edu</a>
+                    <a class="list-group-item" href="https://www.linkedin.com/in/david-tran-52682075">LinkedIn</a>
+                    <a class="list-group-item" href="file/DJT-Resume.pdf" download>Resume</a>
+                    <a class="list-group-item" href="https://github.com/djtran">Github</a>
+                    <a class="list-group-item" href="https://devpost.com/djtran">Devpost</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <br>
     <div class="row">
         <div class="body-content container">
 
@@ -82,7 +117,7 @@
 
 
 <footer class="footer navbar-fixed-bottom">
-    <div class="text-sm-center bg-inverse space10">
+    <div class="text-xs-center bg-inverse space10">
         David J. Tran <a href="https://github.com/djtran/Website-v2.0">Source Code</a>
     </div>
 </footer>

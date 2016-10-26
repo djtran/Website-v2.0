@@ -1,5 +1,7 @@
 .body{
-    padding: 4%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 4% 0%;
     overflow-y: hidden;
 }
 
@@ -20,6 +22,7 @@
 .jumbotron {
     background-image: url("../graphics/VRHackTalk.jpg");
     background-size: cover;
+    background-position: center center;
 }
 
 .space10{
