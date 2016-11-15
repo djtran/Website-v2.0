@@ -2,7 +2,7 @@
  * Created by David on 9/20/2016.
  */
 
-var jumboArray = ["Aspiring Computer Engineer.", "Board Game Enthusiast.", "Rookie Crocheter.", "Energetic Dancer.", "Lifelong Learner.", "Indie Game Developer"];
+var jumboArray = ["Aspiring Computer Engineer.", "Board Game Enthusiast.", "Rookie Crocheter.", "Energetic Dancer.", "Lifelong Learner.", "Indie Game Developer."];
 var arrayIndex = 0;
 var main = setInterval(updateJumbo, 4000);
 
@@ -48,14 +48,14 @@ $(".scrollTop").on('click', function (event) {
     $('html, body').animate({
         scrollTop: 0
     }, 300);
-})
+});
 
 $(".mobNav").on("click", function (event) {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: $(".body-content").offset().top
     }, 300);
-})
+});
 
 $(document).ready(function () {
     $(".body-content").load("content/home.html");
