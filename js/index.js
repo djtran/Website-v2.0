@@ -57,6 +57,42 @@ $(".mobNav").on("click", function (event) {
     }, 300);
 });
 
+$(document).on("click", ".workD" ,function(event){
+   event.preventDefault();
+   var all = $(event.target).parent().children();
+   all.removeClass("active");
+   $(event.target).addClass("active");
+
+   var id = $(event.target).attr('id');
+   switch(id)
+   {
+       case "bAmazon":
+            $(".workDescription").fadeOut(function(){
+               $(".workDescription").load("content/wAmazon.html", $(".workDescription").fadeIn());
+            });
+           break;
+       case "bCIDAR":
+           $(".workDescription").fadeOut(function(){
+               $(".workDescription").load("content/wCIDAR.html", $(".workDescription").fadeIn());
+           });
+           break;
+       case "bResLife":
+           $(".workDescription").fadeOut(function(){
+               $(".workDescription").load("content/wResLife.html", $(".workDescription").fadeIn());
+           });
+           break;
+       default:
+           $(".workDescription").fadeOut(function(){
+               $(".workDescription").html("<br><br><div class = 'text-xs-center'> Choose an item from my work history on the left! </div><br><br>");
+               $(".workDescription").fadeIn();
+           });
+           break;
+   }
+
+});
+
+
+
 $(document).ready(function () {
     $(".body-content").load("content/home.html");
 });

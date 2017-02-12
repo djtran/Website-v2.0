@@ -9,7 +9,7 @@ var titles = [
     "Apps and 2D Content"
 ];
 var projects = [
-    "Use WASD to move. Holding down Up allows you to jump higher!",
+    "Use the Arrow Keys to move. Holding down Up allows you to jump higher!",
     "Welcome to my Projects page! Take a look around and read about my different projects!",
     "I along with some others do indie game development for fun! Our current project is a medieval zombie defense game based on valuing every arrow, emphasizing well aimed long distance shots.",
     "As the co-chair of DeisVR at Brandeis University, I spearhead the development of the mechanical features of our projects. Our current project is a VR museum that will be filled with optimized high quality scans of real life retrieved artifacts. Some of the things I have to manage in that project are handling the artifacts with your hands, and displaying a short description of the object in a way that is intuitive and unobstructive in the virtual space.",
