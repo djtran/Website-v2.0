@@ -1,8 +1,8 @@
 # Website-v2.0
-Personal Website to soon will replace the original one at people.bu.edu/djtran
+Source Code for people.bu.edu/djtran
 
 ##Difference from original
-Embracing a greater understanding of web development from my time at the CIDAR Lab, here's what's different:
+Embracing a greater understanding of web development and better (and neater) program design, here's what's different:
 
 Old:
  - Everything written from __scratch__
@@ -14,5 +14,5 @@ New:
  - AJAX style page loading
  - More javascript to create visually attractive transitions, increase interactibility with the website, and to respond to user input.
  
- If I had permissions on the people.bu.edu domain, I would take the extra step to create this website as a web application using Spring Boot and serve content such as my games packaged for HTML5 on the site.
+If I had permissions on the people.bu.edu domain, I would take the extra step to create this website as a web application using Spring Boot and serve content such as my games packaged for HTML5 on the site. For now, the only "game" on the site is a small javascript game I made using Phaser.io
  
