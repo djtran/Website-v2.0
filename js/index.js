@@ -2,7 +2,7 @@
  * Created by David on 9/20/2016.
  */
 
-var jumboArray = ["Aspiring Computer Engineer.", "Board Game Enthusiast.", "Rookie Crocheter.", "Energetic Dancer.", "Lifelong Learner.", "Indie Game Developer."];
+var jumboArray = ["Aspiring Computer Engineer.", "Board Game Enthusiast.", "Rookie Crocheter.", "Energetic Dancer.", "Lifelong Learner.", "Indie Game Developer.", "Unix Lover"];
 var arrayIndex = 0;
 var main = setInterval(updateJumbo, 4000);
 
@@ -38,6 +38,12 @@ $(".projLink").click(function () {
 $(".educLink").click(function () {
     $(".body-content").fadeOut(function () {
         $(".body-content").load("content/educ.html", $(".body-content").fadeIn());
+    });
+});
+
+$(".testLink").click(function(){
+    $(".body-content").fadeOut(function () {
+        $(".body-content").load("content/test.html", $(".body-content").fadeIn());
     });
 });
 
@@ -88,9 +94,41 @@ $(document).on("click", ".workD" ,function(event){
            });
            break;
    }
-
 });
 
+$(document).on("click", "#bTest", function(event){
+    event.preventDefault();
+    $.getScript( 'infoShop/js/main.js', function( data, textStatus, jqxhr ) {
+        //do stuff after load
+    });
+    $("#bTest").remove();
+});
+
+
+
+//Modal overlay -- Preview images at larger size.
+
+function centerModal() {
+    $(this).css('display', 'block');
+    var $dialog = $(this).find(".modal-lg");
+    var offsetH = ($(window).height() - $dialog.height()) / 2;
+    var offsetW = ($(window).width() - $dialog.width()) / 2;
+    // Center modal vertically in window
+    $dialog.css("margin-top", offsetH);
+    $dialog.css("margin-left", offsetW);
+}
+
+$(document).on("click", ".modal-img", function(event){
+    var srcPath = $(this).attr('id');
+    var prefix = "<img src='";
+    var suffix = "' class='img-fluid'>";
+    $(".modal-body").html(prefix + srcPath + suffix);
+});
+
+$('.modal').on('show.bs.modal', centerModal);
+$(window).on("resize", function () {
+    $('.modal:visible').each(centerModal);
+});
 
 
 $(document).ready(function () {
